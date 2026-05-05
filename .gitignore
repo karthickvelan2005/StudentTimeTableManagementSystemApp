@@ -1,0 +1,10 @@
+node_modules/
+reactapp/node_modules/
+build/
+reactapp/build/
+springapp/target/
+target/
+*.jar
+.env
+*.log
+.vscode/

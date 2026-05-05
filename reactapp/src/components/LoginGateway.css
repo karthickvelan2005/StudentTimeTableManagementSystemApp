@@ -1,0 +1,112 @@
+/* Full-page background */
+.login-gateway-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://www.shutterstock.com/shutterstock/photos/2461973363/display_1500/stock-photo-business-planning-calendar-agenda-work-schedule-concept-businesswomen-use-pen-marks-on-the-virtual-2461973363.jpg') no-repeat center center;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+/* Overlay to dim background slightly */
+.login-gateway-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* dark overlay for contrast */
+  z-index: 0;
+}
+
+/* Form container with glassmorphism */
+.login-form {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.85); /* semi-transparent white */
+  backdrop-filter: blur(10px); /* blur background behind form */
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 360px;
+  max-width: 90%;
+  text-align: center;
+  color: #2c3e50; /* dark text for contrast */
+}
+
+/* Heading */
+.login-form h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1c2833; /* dark blue/gray for contrast */
+}
+
+/* Input fields - refined */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 14px 16px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* On focus - highlight slightly */
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  border: 1px solid #1abc9c;
+  box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}
+
+/* Optional: Smooth font rendering */
+.login-form input {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Radio buttons */
+.login-form label {
+  margin-right: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #1c2833;
+}
+
+.login-form input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Login button */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 12px;
+  background-color: #1abc9c; /* bright turquoise for contrast */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #16a085;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+  .login-form {
+    padding: 30px 20px;
+  }
+}

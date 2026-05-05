@@ -1,0 +1,9 @@
+.app-footer {
+  margin-top: auto;
+  padding: 1.2rem;
+  background: #111827;
+  color: #d1d5db;
+  font-size: 0.95rem;
+  text-align: center;
+  border-top: 2px solid #4f46e5;
+}
