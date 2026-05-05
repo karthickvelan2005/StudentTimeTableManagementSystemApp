@@ -12,7 +12,7 @@ import com.examly.springapp.service.UserService;
 import java.util.HashMap;
 import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:8081")
+// @CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/auth")
 public class UserController {
