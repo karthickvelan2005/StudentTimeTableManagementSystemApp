@@ -28,13 +28,13 @@ const LoginGateway = () => {
   return (
     <div className="login-gateway-container">
       <div className="login-form">
-        <h2>Portal Login</h2>
+        <h2>Login</h2>
         <form onSubmit={handleLogin}>
           <input
             type="text"
             placeholder="Username"
             value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            onChange={(e) => setUsername(e.target.value)} 
             required
           />
           <input
